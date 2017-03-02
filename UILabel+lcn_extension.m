@@ -1,14 +1,14 @@
 //
-//  UILabel+extension.m
+//  UILabel+lcn_extension.m
 //  点通宝
 //
 //  Created by 梁 on 2017/3/1.
 //  Copyright © 2017年 apple. All rights reserved.
 //
 
-#import "UILabel+extension.h"
+#import "UILabel+lcn_extension.h"
 
-@implementation UILabel (extension)
+@implementation UILabel (lcn_extension)
 
 - (UILabel *(^)(NSString *))lcn_text {
     return ^(NSString *text) {
@@ -102,4 +102,5 @@
         return self;
     };
 }
+
 @end

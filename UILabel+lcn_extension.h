@@ -1,5 +1,5 @@
 //
-//  UILabel+extension.h
+//  UILabel+lcn_extension.h
 //  点通宝
 //
 //  Created by 梁 on 2017/3/1.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UILabel (extension)
+@interface UILabel (lcn_extension)
 
 - (UILabel *(^)(NSString *))lcn_text;
 - (UILabel *(^)(UIFont *))lcn_font;
