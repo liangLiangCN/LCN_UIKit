@@ -11,7 +11,7 @@
 @interface UILabel (lcn_extension)
 
 - (UILabel *(^)(NSString *))lcn_text;
-- (UILabel *(^)(UIFont *))lcn_font;
+- (UILabel *(^)(CGFloat))lcn_font;
 - (UILabel *(^)(UIColor *))lcn_textColor;
 - (UILabel *(^)(UIColor *))lcn_shadowColor;
 - (UILabel *(^)(CGSize ))lcn_shadowOffset;

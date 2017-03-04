@@ -17,9 +17,9 @@
     };
 }
 
-- (UILabel *(^)(UIFont *))lcn_font {
-    return ^(UIFont *font) {
-        self.font = font;
+- (UILabel *(^)(CGFloat))lcn_font {
+    return ^(CGFloat font) {
+        self.font = [UIFont systemFontOfSize:font];
         return self;
     };
 }

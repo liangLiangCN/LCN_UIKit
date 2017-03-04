@@ -34,11 +34,11 @@
         return self;
     };
 }
-- (UITextField *(^)(UIFont *))lcn_font {
+- (UITextField *(^)(CGFloat))lcn_font {
     
-    return ^(UIFont *font) {
+    return ^(CGFloat font) {
         
-        self.font = font;
+        self.font = [UIFont systemFontOfSize:font];
         return self;
     };
 }
@@ -204,5 +204,21 @@
     };
 }
 
+- (UITextField *(^)(UIKeyboardType))lcn_keyboardType {
+    
+    return ^(UIKeyboardType keyboardType) {
+        
+        self.keyboardType = keyboardType;
+        return self;
+    };
+}
 
+- (UITextField *(^)(BOOL))lcn_secureTextEntry {
+    
+    return ^(BOOL secureTextEntry) {
+        
+        self.secureTextEntry = secureTextEntry;
+        return self;
+    };
+}
 @end

@@ -121,4 +121,20 @@
         return self;
     };
 }
+
+- (UIButton *(^)(CGFloat))lcn_font {
+    return ^(CGFloat font) {
+        self.titleLabel.font = [UIFont systemFontOfSize:font];
+        return self;
+    };
+}
+
+- (UIButton *(^)(UIColor *))lcn_backgroundColor {
+    
+    return ^(UIColor *backgroundColor) {
+        
+        self.backgroundColor = backgroundColor;
+        return self;
+    };
+}
 @end

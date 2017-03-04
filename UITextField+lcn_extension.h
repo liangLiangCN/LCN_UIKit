@@ -13,7 +13,7 @@
 - (UITextField *(^)(NSString *))lcn_text;
 - (UITextField *(^)(NSAttributedString *))lcn_attributedText;
 - (UITextField *(^)(UIColor *))lcn_textColor;
-- (UITextField *(^)(UIFont *))lcn_font;
+- (UITextField *(^)(CGFloat))lcn_font;
 - (UITextField *(^)(NSTextAlignment))lcn_textAlignment;
 - (UITextField *(^)(UITextBorderStyle))lcn_borderStyle;
 - (UITextField *(^)(NSDictionary<NSString *, id> *))lcn_defaultTextAttributes;
@@ -34,5 +34,7 @@
 - (UITextField *(^)(UIView *))lcn_rightView;
 - (UITextField *(^)(UIView *))lcn_inputView;
 - (UITextField *(^)(UIView *))lcn_inputAccessoryView;
+- (UITextField *(^)(UIKeyboardType))lcn_keyboardType;
+- (UITextField *(^)(BOOL))lcn_secureTextEntry;
 
 @end
