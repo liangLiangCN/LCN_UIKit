@@ -20,4 +20,10 @@
 - (UIImageView *(^)(NSInteger))lcn_animationRepeatCount;
 - (UIImageView *(^)(UIColor *))lcn_tintColor;
 
+- (UIImageView *(^)(UIColor *))lcn_backgroundColor;
+- (UIImageView *(^)(NSInteger))lcn_tag;
+- (UIImageView *(^)(CGRect))lcn_frame;
+- (UIImageView *(^)(CGFloat))lcn_alpha;
+- (UIImageView *(^)(BOOL))lcn_hidden;
+
 @end

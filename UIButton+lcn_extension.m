@@ -137,4 +137,36 @@
         return self;
     };
 }
+- (UIButton *(^)(NSInteger))lcn_tag {
+    
+    return ^(NSInteger tag) {
+        
+        self.tag = tag;
+        return self;
+    };
+}
+- (UIButton *(^)(CGRect))lcn_frame {
+    
+    return ^(CGRect frame) {
+        
+        self.frame = frame;
+        return self;
+    };
+}
+- (UIButton *(^)(CGFloat))lcn_alpha {
+    
+    return ^(CGFloat alpha) {
+        
+        self.alpha = alpha;
+        return self;
+    };
+}
+- (UIButton *(^)(BOOL))lcn_hidden {
+    
+    return ^(BOOL hidden) {
+        
+        self.hidden = hidden;
+        return self;
+    };
+}
 @end

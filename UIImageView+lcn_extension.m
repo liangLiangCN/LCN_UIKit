@@ -85,5 +85,45 @@
         return self;
     };
 }
+- (UIImageView *(^)(UIColor *))lcn_backgroundColor {
+    
+    return ^(UIColor *backgroundColor) {
+        
+        self.backgroundColor = backgroundColor;
+        return self;
+    };
+}
+- (UIImageView *(^)(NSInteger))lcn_tag {
+    
+    return ^(NSInteger tag) {
+        
+        self.tag = tag;
+        return self;
+    };
+}
+- (UIImageView *(^)(CGRect))lcn_frame {
+    
+    return ^(CGRect frame) {
+        
+        self.frame = frame;
+        return self;
+    };
+}
+- (UIImageView *(^)(CGFloat))lcn_alpha {
+    
+    return ^(CGFloat alpha) {
+        
+        self.alpha = alpha;
+        return self;
+    };
+}
+- (UIImageView *(^)(BOOL))lcn_hidden {
+    
+    return ^(BOOL hidden) {
+        
+        self.hidden = hidden;
+        return self;
+    };
+}
 
 @end

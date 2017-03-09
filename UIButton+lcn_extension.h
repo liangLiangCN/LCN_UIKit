@@ -24,7 +24,13 @@
 - (UIButton *(^)(UIImage *, UIControlState))lcn_setImageForState;
 - (UIButton *(^)(UIImage *, UIControlState))lcn_setBackgroundImageForState;
 - (UIButton *(^)(NSAttributedString *, UIControlState))lcn_setAttributedTitleForState;
+
 - (UIButton *(^)(CGFloat))lcn_font;
 - (UIButton *(^)(UIColor *))lcn_backgroundColor;
+- (UIButton *(^)(NSInteger))lcn_tag;
+- (UIButton *(^)(CGRect))lcn_frame;
+- (UIButton *(^)(CGFloat))lcn_alpha;
+- (UIButton *(^)(BOOL))lcn_hidden;
+
 
 @end

@@ -37,4 +37,10 @@
 - (UITextField *(^)(UIKeyboardType))lcn_keyboardType;
 - (UITextField *(^)(BOOL))lcn_secureTextEntry;
 
+- (UITextField *(^)(UIColor *))lcn_backgroundColor;
+- (UITextField *(^)(NSInteger))lcn_tag;
+- (UITextField *(^)(CGRect))lcn_frame;
+- (UITextField *(^)(CGFloat))lcn_alpha;
+- (UITextField *(^)(BOOL))lcn_hidden;
+
 @end

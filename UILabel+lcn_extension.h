@@ -26,4 +26,10 @@
 - (UILabel *(^)(BOOL))lcn_adjustsFontSizeToFitWidth;
 - (UILabel *(^)(BOOL))lcn_allowsDefaultTighteningForTruncation;
 
+- (UILabel *(^)(UIColor *))lcn_backgroundColor;
+- (UILabel *(^)(NSInteger))lcn_tag;
+- (UILabel *(^)(CGRect))lcn_frame;
+- (UILabel *(^)(CGFloat))lcn_alpha;
+- (UILabel *(^)(BOOL))lcn_hidden;
+
 @end
