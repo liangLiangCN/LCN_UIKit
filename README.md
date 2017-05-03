@@ -9,4 +9,5 @@ UIKit框架下,布局的简单处理
     UILabel *label = [[UILabel alloc] init];
     label.lcn_text(@"点通宝").lcn_textColor([UIColor whiteColor]).lcn_font(14).lcn_frame(CGRectMake(0, 0, 100, 21));
     [self.view addSubview:label];
-
+    
+    
